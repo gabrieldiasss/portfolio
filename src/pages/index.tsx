@@ -1,5 +1,4 @@
-import { GetStaticProps } from "next";
-import { api } from "./lib/axios";
+import Head from "next/head";
 
 interface Projects {
   projects: {
@@ -13,15 +12,17 @@ interface Projects {
 
 export default function Home({ projects }: Projects) {
   return (
-    <div>
-      {projects.map((project) => (
-        <h1 key={project.id} >{project.attributes.title}</h1>
-      ))}
-    </div>
+    <>
+      <Head>
+        <title>👷 Em construção... | Gabriel Dias</title>
+      </Head>
+
+      <h1>Portfólio Gabriel Dias</h1>
+    </>
   );
 }
 
-export const getStaticProps: GetStaticProps = async () => {
+/* export const getStaticProps: GetStaticProps = async () => {
   const response = await api.get("/api/projects");
 
   const data = response.data.data;
@@ -32,3 +33,4 @@ export const getStaticProps: GetStaticProps = async () => {
     },
   };
 };
+ */
