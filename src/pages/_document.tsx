@@ -15,10 +15,10 @@ export default function Document() {
           href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins:wght@500;600;700&display=swap"
           rel="stylesheet"
         />
-        {/* <style
+        <style
           id="stitches"
           dangerouslySetInnerHTML={{ __html: getCssText() }}
-        /> */}
+        />
       </Head>
       <body>
         <Main />
