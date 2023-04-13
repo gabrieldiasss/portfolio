@@ -1,27 +1,33 @@
 import { globalCss } from ".";
 
 export const globalStyles = globalCss({
-    '*': {
-        margin: 0,
-        padding: 0
-    },
+  "*": {
+    margin: 0,
+    padding: 0,
+  },
 
-    body: {
-        '-webkit-font-smoorhing': 'antialiased',
-    },
+  body: {
+    "-webkit-font-smoorhing": "antialiased",
+  },
 
-    'input, textarea': {
-        fontFamily: "$title",
-        color: "$base-label", 
-    },
+  "input, textarea": {
+    fontFamily: "$title",
+    color: "$base-label",
+  },
 
-    button: {
-        fontFamily: "$title",
-        color: "$base-title",
-        cursor: "pointer",
-    },
+  button: {
+    fontFamily: "$title",
+    color: "$base-title",
+    cursor: "pointer",
+    fontWeight: 600,
+  },
 
-    a: {
-        textDecoration: "none"
-    }
-})
+  ul: {
+    listStyle: "none",
+  },
+
+  a: {
+    textDecoration: "none",
+    color: "$base-text",    
+  },
+});

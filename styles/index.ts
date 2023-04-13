@@ -24,6 +24,8 @@ export const {
         "base-title": "#272221",
         "base-error": "#f84747",
         "brand-yellow": "#FFEF5C",
+        "brand-linkedin": "#0077B5",
+        "brand-youtube": "#FF0000",
     },
     textSizes: {
         "title-title-xl": "3rem",
@@ -42,8 +44,8 @@ export const {
         "components-button-s": "0.75rem",
       },
       fonts: {
-        regular: "'Lato'",
-        title: "'Poppins'",
+        regular: "Lato",
+        title: "Poppins",
       },
   },
 });

@@ -1,4 +1,5 @@
 import Head from "next/head";
+import { Header } from "../components/Header";
 
 interface Projects {
   projects: {
@@ -17,7 +18,10 @@ export default function Home({ projects }: Projects) {
         <title>👷 Em construção... | Gabriel Dias</title>
       </Head>
 
-      <h1>Portfólio Gabriel Dias</h1>
+      <Header />
+
+      <h1>Olá</h1>
+      <h1>Olá</h1>
     </>
   );
 }
