@@ -13,7 +13,7 @@ export const Title = styled("h1", {
         fontSize: "$title-title-l",
       },
       m: {
-        fontSize: "$text-regular-m",
+        fontSize: "$title-title-m",
       },
       s: {
         fontSize: "$title-title-s",

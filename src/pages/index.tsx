@@ -2,6 +2,7 @@ import Head from "next/head";
 import { Header } from "../components/Header";
 import { Intro } from "../components/Intro";
 import { BackgroundImage } from "../components/BackgroundImage";
+import { About } from "../components/About";
 
 interface Projects {
   projects: {
@@ -22,10 +23,13 @@ export default function Home({ projects }: Projects) {
 
       <Header />
 
-      <Intro />
+      <main>
+        <Intro />
+        <About />
+      </main>
 
       <BackgroundImage />
-
+      
     </>
   );
 }
