@@ -1,5 +1,7 @@
 import Head from "next/head";
 import { Header } from "../components/Header";
+import { Intro } from "../components/Intro";
+import { BackgroundImage } from "../components/BackgroundImage";
 
 interface Projects {
   projects: {
@@ -20,8 +22,10 @@ export default function Home({ projects }: Projects) {
 
       <Header />
 
-      <h1>Olá</h1>
-      <h1>Olá</h1>
+      <Intro />
+
+      <BackgroundImage />
+
     </>
   );
 }

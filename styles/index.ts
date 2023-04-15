@@ -4,8 +4,8 @@ export const {
   config,
   globalCss,
   keyframes,
-  css,
   theme,
+  css,
   getCssText,
   createTheme,
   styled,
@@ -27,13 +27,13 @@ export const {
         "brand-linkedin": "#0077B5",
         "brand-youtube": "#FF0000",
     },
-    textSizes: {
-        "title-title-xl": "3rem",
-        "title-title-l": "2rem",
-        "title-title-m": "1.5rem",
-        "title-title-s": "1.2rem",
+    fontSizes: {
+        "title-title-xl": "4rem",
+        "title-title-l": "3.5rem",
+        "title-title-m": "2.75rem",
+        "title-title-s": "1.25rem",
         "title-title-xs": "1.125rem",
-        "text-regular-l": "1.25rem",
+        "text-regular-l": "1.125rem",
         "text-bold-l": "1.25rem",
         "text-regular-m": "1rem",
         "text-bold-m": "1rem",
@@ -44,8 +44,14 @@ export const {
         "components-button-s": "0.75rem",
       },
       fonts: {
-        regular: "Lato",
-        title: "Poppins",
+        lato: "Lato",
+        poppins: "Poppins",
       },
+      fontWeights: {
+        regular: 400,
+        medium: 500,
+        bold: 700,
+      }
   },
 });
+

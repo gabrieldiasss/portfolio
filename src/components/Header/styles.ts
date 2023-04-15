@@ -2,14 +2,16 @@ import { styled } from "../../../styles/index";
 import LinkRouter from "next/link";
 
 export const HeaderContainer = styled("header", {
+
   display: "flex",
   alignItems: "center",
   maxWidth: 1120,
   margin: "0 auto",
   background: "$base-white",
+  boxShadow: "2px 2px 7px #D7D5D5",
   borderRadius: 100,
 
-  marginTop: "1rem",
+  marginTop: "2rem",
 
   height: "5rem",
 });
@@ -42,7 +44,7 @@ export const Navigation = styled("nav", {
 export const Link = styled(LinkRouter, {
   padding: "0 1rem",
   fontSize: "1rem",
-  fontFamily: "$regular",
+  fontFamily: "$lato",
   cursor: "pointer",
   fontWeight: 700,
 

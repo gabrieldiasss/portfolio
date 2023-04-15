@@ -1,7 +1,7 @@
 import { DownloadSimple } from "phosphor-react";
 import { Button, HeaderContainer, HeaderContent, Link, Navigation } from "./styles";
 import Image from "next/image";
-import Logo from "../../assets/logo.svg";
+import Logo from "../../img/logo.svg";
 
 export function Header() {
   return (
@@ -25,6 +25,7 @@ export function Header() {
                   target="_blank"
                   href="https://www.linkedin.com/in/gabrieldiasss/"
                   prefetch
+                  title="Veja meu perfil no Linkedin"
                 >
                   Linkedin
                 </Link>
@@ -35,6 +36,7 @@ export function Header() {
                   target="_blank"
                   href="https://www.linkedin.com/in/gabrieldiasss/"
                   prefetch
+                  title="Veja meu Github"
                 >
                   GitHub
                 </Link>
@@ -45,6 +47,7 @@ export function Header() {
                   target="_blank"
                   href="https://www.youtube.com/channel/UCtQ8Ki9M945TsBVXS_7zWNg"
                   prefetch
+                  title="Assista meu canal no Youtube"
                 >
                   Youtube
                 </Link>

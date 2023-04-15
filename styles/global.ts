@@ -7,16 +7,17 @@ export const globalStyles = globalCss({
   },
 
   body: {
+
     "-webkit-font-smoorhing": "antialiased",
   },
 
   "input, textarea": {
-    fontFamily: "$title",
+    fontFamily: "$poppins",
     color: "$base-label",
   },
 
   button: {
-    fontFamily: "$title",
+    fontFamily: "$poppins",
     color: "$base-title",
     cursor: "pointer",
     fontWeight: 600,
