@@ -1,7 +1,7 @@
 import Image, { ImageLoader } from "next/image";
 import { Paragraph, Title } from "../Typography";
-import { AchievementNumbers, IntroContainer } from "./styles";
-import { StaticImageData }from 'next/image'
+import { AchievementNumbers, IntroContainer, TitleContainer } from "./styles";
+import { StaticImageData } from "next/image";
 
 const ProfileImage = ({ src }: StaticImageData) => {
   return `https://github.com/${src}`;
@@ -17,9 +17,11 @@ export function Intro() {
         height={70}
         alt="Gabriel Dias"
       />
-      <Title size="xl" weight="medium">
-        Olá, sou Gabriel
-      </Title>
+      <TitleContainer>
+        <Title size="xl" weight="medium">
+          Olá, sou Gabriel
+        </Title>
+      </TitleContainer>
       <Title size="l" weight="medium">
         um desenvolvedor web com
       </Title>
@@ -32,22 +34,30 @@ export function Intro() {
       <AchievementNumbers>
         <div>
           <Title>3</Title>
-          <Paragraph size="s" fonts="poppins">ANOS DE EXPERIÊNCIA</Paragraph>
+          <Paragraph size="s" fonts="poppins">
+            ANOS DE EXPERIÊNCIA
+          </Paragraph>
         </div>
 
         <div>
           <Title>+ 10</Title>
-          <Paragraph size="s" fonts="poppins">CONHECIMENTOS TÉCNICOS</Paragraph >
+          <Paragraph size="s" fonts="poppins">
+            CONHECIMENTOS TÉCNICOS
+          </Paragraph>
         </div>
 
         <div>
           <Title>+ 240K</Title>
-          <Paragraph size="s" fonts="poppins">VISUALIZAÇÕES NO YOUTUBE</Paragraph>
+          <Paragraph size="s" fonts="poppins">
+            VISUALIZAÇÕES NO YOUTUBE
+          </Paragraph>
         </div>
 
         <div>
           <Title>+ 3</Title>
-          <Paragraph size="s" fonts="poppins">ANOS DE EXPERIÊNCIA</Paragraph>
+          <Paragraph size="s" fonts="poppins">
+            ANOS DE EXPERIÊNCIA
+          </Paragraph>
         </div>
       </AchievementNumbers>
     </IntroContainer>

@@ -34,3 +34,10 @@ export const AchievementNumbers = styled("div", {
         textAlign: "center"
     }
 })
+
+export const TitleContainer = styled("div", {
+    background: "$brand-yellow",
+    marginTop: "2rem",
+    padding: "0.25rem 3rem",
+    borderRadius: 8
+})
