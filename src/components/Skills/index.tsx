@@ -3,11 +3,12 @@ import { StaticImageData } from "next/image";
 import { BallCanvas } from "../canvas";
 import { Paragraph, Title } from "../Typography";
 import { SkillsContainer, SkillsContent } from "./styles";
-/* 
+
+
 interface Ball {
     name: string;
     icon: StaticImageData;
-  } */
+  }
 
 export function Skills() {
   return (
@@ -16,7 +17,7 @@ export function Skills() {
       <Paragraph size="m" fonts="lato">Possuo uma sólida experiência nas tecnologias mencionadas.</Paragraph>
 
       <SkillsContent>
-        {techs.map((tech) => (
+        {techs.map((tech: Ball) => (
           <div key={tech.name}>
             <BallCanvas icon={tech.icon} />
           </div>

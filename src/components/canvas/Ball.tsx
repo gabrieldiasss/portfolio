@@ -1,4 +1,4 @@
-import React, { Suspense } from "react";
+import React, { RefAttributes, Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
 import {
   Decal,
@@ -9,13 +9,43 @@ import {
 } from "@react-three/drei";
 
 import CanvasLoader from "../Loader";
-import { StaticImageData } from "next/image";
 
-/* interface BallProps {
+interface BallProps {
   imgUrl: string;
-} */
+}
 
-const Ball = (props /* : BallProps */) => {
+interface Props {
+  children: number[], 
+  speed: number, 
+  rotationIntensity: number, 
+  floatIntensity: number, 
+  attach: number,
+  args: number,
+  key: number,
+  onUpdate: number,
+}
+
+const floatProps: Props = {
+  children: [], 
+  speed: 0, 
+  rotationIntensity: 0, 
+  floatIntensity: 0, 
+  attach: 0,
+  args: 0,
+  key: 0,
+  onUpdate: 0,
+};
+
+export declare type FloatProps = JSX.IntrinsicElements['group'] & {
+  enabled?: boolean;
+  speed?: number;
+  rotationIntensity?: number;
+  floatIntensity?: number;
+  children?: React.ReactNode;
+  floatingRange?: [number?, number?];
+};
+
+const Ball = (props: BallProps) => {
   const [decal] = useTexture([props.imgUrl /* as string */]);
 
   return (
@@ -42,12 +72,13 @@ const Ball = (props /* : BallProps */) => {
   );
 };
 
-/* interface Ball {
-  icon: StaticImageData;
-} */
+interface BallCanvasProps {
+  icon: {
+    src: string;
+  }
+}
 
-
-const BallCanvas = ({ icon } /* : Ball */) => {
+const BallCanvas = ({ icon } : BallCanvasProps) => {
 
   return (
     <div>
