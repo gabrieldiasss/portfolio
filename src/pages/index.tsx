@@ -4,7 +4,7 @@ import { Intro } from "../components/Intro";
 import { BackgroundImage } from "../components/BackgroundImage";
 import { About } from "../components/About";
 import { Projects } from "../components/Projects";
-import { Skills } from "../components/Skills";
+import { Skills } from "../components/Technologies";
 import { Experience } from "../components/Experience";
 
 interface Projects {

@@ -16,7 +16,6 @@ function saveCurriculum() {
   doc.save("cv-gabriel-dias")
 }
 
-//<a href="https://ibb.co/sy2fjsy"><img src="https://i.ibb.co/SRPjNVR/Curriculo-7-1.png" alt="Curriculo-7-1" border="0"></a>
 
 export function Header() {
   return (
