@@ -4,6 +4,7 @@ import { Intro } from "../components/Intro";
 import { BackgroundImage } from "../components/BackgroundImage";
 import { About } from "../components/About";
 import { Projects } from "../components/Projects";
+import { Skills } from "../components/Skills";
 
 interface Projects {
   projects: {
@@ -27,6 +28,7 @@ export default function Home({ projects }: Projects) {
       <main>
         <Intro />
         <About />
+        <Skills />
         <Projects />
       </main>
 
