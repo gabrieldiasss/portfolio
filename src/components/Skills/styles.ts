@@ -3,6 +3,10 @@ import { styled } from "../../../styles";
 export const TechnologiesContainer = styled("section", {
   marginTop: "2rem",
   position: "relative",
+
+  img: {
+    height: 700
+  }
 });
 
 export const TechnologiesContent = styled("div", {

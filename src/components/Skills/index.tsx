@@ -1,4 +1,3 @@
-import { StaticImageData } from "next/image";
 import { Paragraph, Title } from "../Typography";
 import {
   TechnologiesCardContainer,
@@ -12,7 +11,7 @@ const technologies = [
   {
     title: "Front-end",
     description:
-      "Para o desenvolvimento de interfaces, utilizo frequentemente HTML,CSS, Javascript, ReactJS, NextJS. Consumindo API's Rest e GraphQl.",
+      "Para o desenvolvimento de interfaces, utilizo frequentemente HTML,CSS, Javascript, Typescript, ReactJS, NextJS. Consumindo API's Rest e GraphQl.",
   },
   {
     title: "Back-end",

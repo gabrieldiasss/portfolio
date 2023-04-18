@@ -38,7 +38,6 @@ export function Projects() {
         </PersonalProjectContainer>
       </ProjectsContent>
 
-      <BackgroundImage />
     </ProjectsContainer>
   );
 }

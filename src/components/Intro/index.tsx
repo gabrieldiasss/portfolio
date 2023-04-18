@@ -31,18 +31,18 @@ export function Intro() {
 
       <AchievementNumbers>
         <div>
-          <Title>+ 3</Title>
+          <Title>3</Title>
           <Paragraph size="s" fonts="poppins">ANOS DE EXPERIÊNCIA</Paragraph>
         </div>
 
         <div>
-          <Title>+ 3</Title>
-          <Paragraph size="s" fonts="poppins">ANOS DE EXPERIÊNCIA</Paragraph >
+          <Title>+ 10</Title>
+          <Paragraph size="s" fonts="poppins">CONHECIMENTOS TÉCNICOS</Paragraph >
         </div>
 
         <div>
-          <Title>+ 3</Title>
-          <Paragraph size="s" fonts="poppins">ANOS DE EXPERIÊNCIA</Paragraph>
+          <Title>+ 240K</Title>
+          <Paragraph size="s" fonts="poppins">VISUALIZAÇÕES NO YOUTUBE</Paragraph>
         </div>
 
         <div>
