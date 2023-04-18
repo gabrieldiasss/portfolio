@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { Paragraph, Title } from "../Typography";
 import { AboutContainer, AboutContent, AboutInfos } from "./styles";
-import AboutMeImage from "../../img/about-image.png";
+import AboutMeImage from "../../assets/about-image.png";
 
 export function About() {
   return (

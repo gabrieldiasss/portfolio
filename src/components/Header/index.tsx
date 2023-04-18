@@ -1,7 +1,7 @@
 import { DownloadSimple } from "phosphor-react";
 import { Button, HeaderContainer, HeaderContent, Link, Navigation } from "./styles";
 import Image from "next/image";
-import Logo from "../../img/logo.svg";
+import Logo from "../../assets/logo.svg";
 
 export function Header() {
   return (
