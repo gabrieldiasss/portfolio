@@ -1,7 +1,22 @@
 import { DownloadSimple } from "phosphor-react";
-import { Button, HeaderContainer, HeaderContent, Link, Navigation } from "./styles";
+import {
+  Button,
+  HeaderContainer,
+  HeaderContent,
+  Link,
+  Navigation,
+} from "./styles";
 import Image from "next/image";
 import Logo from "../../assets/logo.svg";
+import jsPDF from "jspdf";
+
+function saveCurriculum() {
+  const doc = new jsPDF('portrait', 'px', 'a4', false)
+  doc.addImage("https://i.ibb.co/SRPjNVR/Curriculo-7-1.png", 'PNG', 0, 0, 417, 653)
+  doc.save("cv-gabriel-dias")
+}
+
+//<a href="https://ibb.co/sy2fjsy"><img src="https://i.ibb.co/SRPjNVR/Curriculo-7-1.png" alt="Curriculo-7-1" border="0"></a>
 
 export function Header() {
   return (
@@ -13,7 +28,7 @@ export function Header() {
           <Navigation>
             <ul>
               <li>
-                <Link href="" >Sobre</Link>
+                <Link href="">Sobre</Link>
               </li>
               <li>
                 <Link href="">Trabalhos</Link>
@@ -56,10 +71,10 @@ export function Header() {
           </Navigation>
         </div>
 
-        <Button>
-          <DownloadSimple size={24} />
-          Currículo
-        </Button>
+          <Button onClick={saveCurriculum}>
+            <DownloadSimple size={24} />
+            Currículo
+          </Button>
       </HeaderContent>
     </HeaderContainer>
   );
