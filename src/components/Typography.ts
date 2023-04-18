@@ -56,6 +56,9 @@ export const Paragraph = styled("p", {
       poppins: {
         fontFamily: "$poppins",
       },
+      lato: {
+        fontFamily: "$lato",
+      }
     },
 
     weight: {

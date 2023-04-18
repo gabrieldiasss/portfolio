@@ -23,6 +23,8 @@ export const {
         "base-subtitle": "#403937",
         "base-title": "#272221",
         "base-error": "#f84747",
+        "base-border": "#E6E6E6",
+        "base-tag": "#5D5D5D",
         "brand-yellow": "#FFEF5C",
         "brand-linkedin": "#0077B5",
         "brand-youtube": "#FF0000",
