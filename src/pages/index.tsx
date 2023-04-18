@@ -32,7 +32,7 @@ export default function Home({ projects }: Projects) {
         <Projects />
       </main>
 
-      <BackgroundImage />
+      <BackgroundImage sizeBackground="large" />
       
     </>
   );
