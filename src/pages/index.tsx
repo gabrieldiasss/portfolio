@@ -5,6 +5,7 @@ import { BackgroundImage } from "../components/BackgroundImage";
 import { About } from "../components/About";
 import { Projects } from "../components/Projects";
 import { Skills } from "../components/Skills";
+import { Experience } from "../components/Experience";
 
 interface Projects {
   projects: {
@@ -30,10 +31,10 @@ export default function Home({ projects }: Projects) {
         <About />
         <Skills />
         <Projects />
+        <Experience />
       </main>
 
       <BackgroundImage sizeBackground="large" />
-      
     </>
   );
 }

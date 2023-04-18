@@ -9,7 +9,7 @@ export function CardProject() {
     return (
         <CardProjectContainer>
             <Title size="s">Github blog</Title>
-            <Paragraph size="m" fonts="lato" weight="regular" color="" >Github Blog é um blog baseado em repositórios do GitHub</Paragraph>
+            <Paragraph size="m" fonts="lato" weight="regular">Github Blog é um blog baseado em repositórios do GitHub</Paragraph>
             <Image src={Project} width={undefined} height={200} alt="" />
             <TagSection />
         </CardProjectContainer>

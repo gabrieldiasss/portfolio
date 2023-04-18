@@ -5,6 +5,14 @@ export const Title = styled("h1", {
   fontFamily: "$poppins",
 
   variants: {
+    color: {
+      white: {
+        color: "$base-white"
+      },
+      gray: {
+        color: "#F5F5F5"
+      }
+    },
     size: {
       xl: {
         fontSize: "$title-title-xl",
@@ -40,6 +48,14 @@ export const Paragraph = styled("p", {
   color: "$base-text",
 
   variants: {
+    color: {
+      white: {
+        color: "$base-white"
+      },
+      "gray-100": {
+        color: "#F5F5F5"
+      }
+    },
     size: {
       l: {
         fontSize: "$text-regular-l",
