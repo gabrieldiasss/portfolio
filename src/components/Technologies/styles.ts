@@ -11,7 +11,7 @@ export const TechnologiesContainer = styled("section", {
 
 export const TechnologiesContent = styled("div", {
   marginTop: "2rem",
-  maxWidth: 1120,
+  maxWidth: 980,
   margin: "0 auto",
 });
 
