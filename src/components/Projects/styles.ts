@@ -1,7 +1,6 @@
 import { styled } from "../../../styles";
 
 export const ProjectsContainer = styled("section", {
-  backgroundColor: "rgba(0, 0, 0, 0.05)",
   padding: "2rem 0",
   marginTop: "2rem",
   position: "relative",
@@ -44,11 +43,8 @@ export const PersonalProjectContainer = styled("main", {
 })  
 
 export const MainPersonalProjects = styled("div", {
+  marginTop: "2rem",
   display: "flex",
   flexDirection: "column",
   gap: "2rem"
-})
-
-export const SecondaryPersonalProjects = styled("div", {
-
 })

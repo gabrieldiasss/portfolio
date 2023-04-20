@@ -1,7 +1,6 @@
 import { styled } from "../../../styles";
 
 export const AboutContainer = styled("section", {
-  backgroundColor: "rgba(0, 0, 0, 0.05)",
   padding: "2rem 0",
   marginTop: "2rem",
 });

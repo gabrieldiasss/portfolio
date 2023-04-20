@@ -1,15 +1,11 @@
-import { BackgroundImage } from "../BackgroundImage";
-import { CardProject } from "../CardProject";
-import { CardProjectSecondary } from "../CardProjectSecondary";
 import { Title } from "../Typography";
+import { CardProject } from "./components/CardProject";
 import {
   FilterProjects,
   HeaderProjects,
   MainPersonalProjects,
-  PersonalProjectContainer,
   ProjectsContainer,
   ProjectsContent,
-  SecondaryPersonalProjects,
   Tag,
 } from "./styles";
 
@@ -26,18 +22,11 @@ export function Projects() {
           </FilterProjects>
         </HeaderProjects>
 
-        <PersonalProjectContainer>
-          <MainPersonalProjects>
-            <CardProject />
-            <CardProject />
-          </MainPersonalProjects>
-
-          <SecondaryPersonalProjects>
-            <CardProjectSecondary />
-          </SecondaryPersonalProjects>
-        </PersonalProjectContainer>
+        <MainPersonalProjects>
+          <CardProject />
+          <CardProject />
+        </MainPersonalProjects>
       </ProjectsContent>
-
     </ProjectsContainer>
   );
 }
