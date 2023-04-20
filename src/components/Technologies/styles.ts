@@ -1,12 +1,12 @@
-import { styled } from "../../../styles";
+import { styled } from "../../styles";
 
 export const TechnologiesContainer = styled("section", {
   marginTop: "2rem",
   position: "relative",
 
   img: {
-    height: 700
-  }
+    height: 700,
+  },
 });
 
 export const TechnologiesContent = styled("div", {
@@ -21,4 +21,3 @@ export const TechnologiesCardContainer = styled("div", {
   gridTemplateColumns: "1fr 1fr 1fr",
   gap: "2rem",
 });
-

@@ -1,4 +1,4 @@
-import { styled } from "../../../styles/index";
+import { styled } from "../../styles/index";
 import LinkRouter from "next/link";
 
 export const HeaderContainer = styled("header", {

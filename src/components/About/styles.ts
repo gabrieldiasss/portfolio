@@ -1,4 +1,4 @@
-import { styled } from "../../../styles";
+import { styled } from "../../styles";
 
 export const AboutContainer = styled("section", {
   padding: "2rem 0",

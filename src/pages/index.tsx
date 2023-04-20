@@ -9,6 +9,9 @@ import { Experience } from "../components/Experience";
 import { Contact } from "../components/Contact";
 import { Footer } from "../components/Footer";
 
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 interface Projects {
   projects: {
     id: number;
@@ -25,6 +28,8 @@ export default function Home({ projects }: Projects) {
       <Head>
         <title>👷 Em construção... | Gabriel Dias</title>
       </Head>
+
+      <ToastContainer />
 
       <Header />
 

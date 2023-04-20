@@ -1,16 +1,18 @@
 import { InputHTMLAttributes, forwardRef } from "react";
 import { InputContainer, InputStyled } from "./styles";
+import { Paragraph } from "../../../Typography";
 
 type InputProps = InputHTMLAttributes<HTMLInputElement> & {
-  error?: string;
-  placeholder: string
+  error?: string
 };
 
 export const Input = forwardRef<HTMLInputElement, InputProps>(
-  ({ error, placeholder, className, ...props }, ref) => {
+  ({ error, ...props }, ref) => {
+
     return (
       <InputContainer>
-        <InputStyled placeholder={placeholder} />
+        <InputStyled {...props} ref={ref} />
+        <Paragraph weight="bold" fonts="lato" color="error">{error}</Paragraph>
       </InputContainer>
     );
   }

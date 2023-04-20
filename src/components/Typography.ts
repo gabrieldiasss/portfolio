@@ -1,4 +1,4 @@
-import { styled } from "../../styles";
+import { styled } from "../styles";
 
 export const Title = styled("h1", {
   color: "$base-title",
@@ -7,11 +7,11 @@ export const Title = styled("h1", {
   variants: {
     color: {
       white: {
-        color: "$base-white"
+        color: "$base-white",
       },
       gray: {
-        color: "#F5F5F5"
-      }
+        color: "#F5F5F5",
+      },
     },
     size: {
       xl: {
@@ -50,11 +50,14 @@ export const Paragraph = styled("p", {
   variants: {
     color: {
       white: {
-        color: "$base-white"
+        color: "$base-white",
       },
       "gray-100": {
-        color: "#F5F5F5"
-      }
+        color: "#F5F5F5",
+      },
+      error: {
+        color: "$base-error",
+      },
     },
     size: {
       l: {
@@ -74,7 +77,7 @@ export const Paragraph = styled("p", {
       },
       lato: {
         fontFamily: "$lato",
-      }
+      },
     },
 
     weight: {

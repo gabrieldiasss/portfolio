@@ -1,4 +1,4 @@
-import { styled } from "../../../styles";
+import { styled } from "../../styles";
 
 export const ProjectsContainer = styled("section", {
   padding: "2rem 0",
@@ -18,8 +18,8 @@ export const MainPersonalProjects = styled("div", {
   marginTop: "2rem",
   display: "flex",
   flexDirection: "column",
-  gap: "2rem"
-})
+  gap: "2rem",
+});
 
 export const HeaderProjects = styled("header", {
   display: "flex",
@@ -41,4 +41,3 @@ export const Tag = styled("div", {
   borderRadius: 8,
   cursor: "pointer",
 });
-

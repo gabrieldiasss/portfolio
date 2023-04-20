@@ -13,7 +13,11 @@ export const globalStyles = globalCss({
 
   "input, textarea": {
     fontFamily: "$poppins",
-    color: "$base-label",
+    color: "$base-text",
+
+    "&::placeholder": {
+      color: "$base-label",
+    }
   },
 
   button: {

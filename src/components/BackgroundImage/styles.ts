@@ -1,4 +1,4 @@
-import { styled } from "../../../styles";
+import { styled } from "../../styles";
 import Image from "next/image";
 
 export const ImageStyled = styled(Image, {
