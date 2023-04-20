@@ -1,5 +1,5 @@
-import { Title } from "../Typography";
 import { CardProject } from "./components/CardProject";
+import { Title } from "../Typography";
 import {
   FilterProjects,
   HeaderProjects,
@@ -26,6 +26,8 @@ export function Projects() {
           <CardProject />
           <CardProject />
         </MainPersonalProjects>
+        <CardProject />
+        <CardProject />
       </ProjectsContent>
     </ProjectsContainer>
   );

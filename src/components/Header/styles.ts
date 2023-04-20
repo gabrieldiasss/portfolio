@@ -2,10 +2,9 @@ import { styled } from "../../../styles/index";
 import LinkRouter from "next/link";
 
 export const HeaderContainer = styled("header", {
-
   display: "flex",
   alignItems: "center",
-  maxWidth: 1120,
+  maxWidth: 980,
   margin: "0 auto",
   background: "$base-white",
   boxShadow: "2px 2px 7px #D7D5D5",

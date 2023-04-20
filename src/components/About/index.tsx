@@ -15,7 +15,7 @@ export function About() {
         />
 
         <AboutInfos>
-          <Title size="m" weight="medium">
+          <Title size="s" weight="medium">
             Um pouco sobre mim
           </Title>
 
@@ -30,8 +30,7 @@ export function About() {
             entanto, após um mês estudando Python e lógica de programação,
             comecei a sentir um pouco de insatisfação, pois não conseguia ver
             resultados visuais atraentes. Foi então que descobri conteúdos sobre
-            desenvolvimento front-end, com as principais tecnologias do
-            desenvolvimento web. Isso me despertou interesse, e comecei a
+            desenvolvimento front-end isso me despertou interesse, e comecei a
             estudar e me dedicar ao desenvolvimento de interfaces de usuário,
             construindo sites bonitos e funcionais. Após 1 ano estudando por
             conta, criei um canal no Youtube onde foi um divisor de águas na
@@ -39,7 +38,7 @@ export function About() {
             criação de conteúdo. Participar de todo processo de criação de um
             projeto como esse é fantástico, consegui ganhar mais conhecimento,
             agreguei valor para vida de centenas de milhares de pessoas e todos
-            os dias recebe mensagens de agradecimento pelo conteúdo.{" "}
+            os dias recebe mensagens de agradecimento pelo conteúdo.
             Se você desejar conhecer mais sobre minha trajetória e minha vida
             pessoal, ficarei muito grato em marcar um bate-papo para
             conversarmos.
