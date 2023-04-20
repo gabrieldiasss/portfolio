@@ -3,7 +3,7 @@ import { Title } from "../../../Typography";
 import { CardProjectContainer, ProjectDesktop, ProjectMobile } from "./styles";
 import Project from "../../../../assets/project.png";
 import Image from "next/image";
-import { TagSection } from "../../../TagSection";
+import { TagSection } from "../TagSection";
 
 export function CardProject() {
   return (

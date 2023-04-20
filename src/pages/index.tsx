@@ -7,6 +7,7 @@ import { Projects } from "../components/Projects";
 import { Skills } from "../components/Technologies";
 import { Experience } from "../components/Experience";
 import { Contact } from "../components/Contact";
+import { Footer } from "../components/Footer";
 
 interface Projects {
   projects: {
@@ -35,6 +36,8 @@ export default function Home({ projects }: Projects) {
         <Experience />
         <Contact />
       </main>
+
+      <Footer />
 
       <BackgroundImage sizeBackground="large" />
     </>

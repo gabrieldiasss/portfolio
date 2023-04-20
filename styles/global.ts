@@ -31,4 +31,8 @@ export const globalStyles = globalCss({
     textDecoration: "none",
     color: "$base-text",    
   },
+
+  img: {
+    cursor: "pointer"
+  }
 });

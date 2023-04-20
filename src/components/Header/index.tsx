@@ -11,11 +11,17 @@ import Logo from "../../assets/logo.svg";
 import jsPDF from "jspdf";
 
 function saveCurriculum() {
-  const doc = new jsPDF('portrait', 'px', 'a4', false)
-  doc.addImage("https://i.ibb.co/SRPjNVR/Curriculo-7-1.png", 'PNG', 0, 0, 417, 653)
-  doc.save("cv-gabriel-dias")
+  const doc = new jsPDF("portrait", "px", "a4", false);
+  doc.addImage(
+    "https://i.ibb.co/SRPjNVR/Curriculo-7-1.png",
+    "PNG",
+    0,
+    0,
+    417,
+    653
+  );
+  doc.save("cv-gabriel-dias");
 }
-
 
 export function Header() {
   return (
@@ -70,10 +76,10 @@ export function Header() {
           </Navigation>
         </div>
 
-          <Button onClick={saveCurriculum}>
-            <DownloadSimple size={24} />
-            Currículo
-          </Button>
+        <Button onClick={saveCurriculum}>
+          <DownloadSimple size={24} />
+          Currículo
+        </Button>
       </HeaderContent>
     </HeaderContainer>
   );
