@@ -14,13 +14,13 @@ export const ProjectsContent = styled("main", {
   gap: "2rem",
 });
 
-
 export const MainPersonalProjects = styled("div", {
   marginTop: "2rem",
   display: "flex",
   flexDirection: "column",
   gap: "2rem"
 })
+
 export const HeaderProjects = styled("header", {
   display: "flex",
   flex: 1,

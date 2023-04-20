@@ -15,7 +15,7 @@ export function About() {
         />
 
         <AboutInfos>
-          <Title size="s" weight="medium">
+          <Title size="m" weight="medium">
             Um pouco sobre mim
           </Title>
 

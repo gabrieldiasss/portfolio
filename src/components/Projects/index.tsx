@@ -26,8 +26,6 @@ export function Projects() {
           <CardProject />
           <CardProject />
         </MainPersonalProjects>
-        <CardProject />
-        <CardProject />
       </ProjectsContent>
     </ProjectsContainer>
   );
