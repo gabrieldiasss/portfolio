@@ -1,4 +1,4 @@
-import { DownloadSimple } from "phosphor-react";
+import { DownloadSimple, List } from "phosphor-react";
 import {
   Button,
   HeaderContainer,
@@ -28,6 +28,8 @@ export function Header() {
     <HeaderContainer>
       <HeaderContent>
         <div>
+          <List size={24} />
+
           <Image src={Logo} width={50} height={50} alt="" />
 
           <Navigation>
@@ -75,7 +77,6 @@ export function Header() {
             </ul>
           </Navigation>
         </div>
-
         <Button onClick={saveCurriculum}>
           <DownloadSimple size={24} />
           Currículo

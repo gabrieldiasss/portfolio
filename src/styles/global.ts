@@ -11,6 +11,12 @@ export const globalStyles = globalCss({
     "-webkit-font-smoorhing": "antialiased",
   },
 
+  html: {
+    "@laptop": {
+      fontSize: "80%",
+    },
+  },
+
   "input, textarea": {
     fontFamily: "$poppins",
     color: "$base-text",

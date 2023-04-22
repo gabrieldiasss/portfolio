@@ -5,6 +5,13 @@ export const IntroContainer = styled("div", {
   alignItems: "center",
   flexDirection: "column",
 
+  width: "90%",
+  margin: "0 auto",
+
+  "@tablet": {
+    textAlign: "center",
+  },
+
   marginTop: "2rem",
 
   img: {
@@ -18,10 +25,12 @@ export const IntroContainer = styled("div", {
 });
 
 export const AchievementNumbers = styled("div", {
-  display: "flex",
-  alignItems: "center",
+  display: "grid",
+  gridTemplateColumns: "1fr 1fr 1fr 1fr",
   backgroundColor: "$base-white",
   padding: "2rem",
+
+  flexWrap: "wrap",
 
   flex: 1,
 
@@ -29,6 +38,10 @@ export const AchievementNumbers = styled("div", {
 
   gap: "3rem",
   borderRadius: 8,
+
+  "@tablet": {
+    gridTemplateColumns: "1fr 1fr"
+  },
 
   div: {
     textAlign: "center",

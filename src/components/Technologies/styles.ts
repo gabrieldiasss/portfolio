@@ -13,6 +13,8 @@ export const TechnologiesContent = styled("div", {
   marginTop: "2rem",
   maxWidth: 980,
   margin: "0 auto",
+
+  width: "90%",
 });
 
 export const TechnologiesCardContainer = styled("div", {
@@ -20,4 +22,12 @@ export const TechnologiesCardContainer = styled("div", {
   display: "grid",
   gridTemplateColumns: "1fr 1fr 1fr",
   gap: "2rem",
+
+  "@laptop": {
+    gridTemplateColumns: "1fr 1fr",
+  },
+
+  "@mobileG": {
+    gridTemplateColumns: "1fr",
+  }
 });

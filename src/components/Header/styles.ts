@@ -9,6 +9,8 @@ export const HeaderContainer = styled("header", {
   background: "$base-white",
   boxShadow: "2px 2px 7px #D7D5D5",
   borderRadius: 100,
+  width: "90%",
+
 
   marginTop: "2rem",
 
@@ -19,20 +21,42 @@ export const HeaderContent = styled("div", {
   display: "flex",
   alignItems: "center",
 
+
   justifyContent: "space-between",
   padding: "0 2rem",
   flex: 1,
 
   div: {
     display: "flex",
-    alignItems: "center",
+    alignItems: 'center',
+
+    svg: {
+      "@laptopG": {
+        display: "none",
+      },
+  
+      "@laptop": {
+        display: "block",
+      },
+    },
+
+    "@laptop": {
+      display: "flex",
+      justifyContent: "space-between",
+      flex: 1,
+    },
   },
 });
 
 export const Navigation = styled("nav", {
+
   ul: {
     display: "flex",
     marginLeft: "1rem",
+
+    "@laptop": {
+      display: "none"
+    }
   },
 
   li: {

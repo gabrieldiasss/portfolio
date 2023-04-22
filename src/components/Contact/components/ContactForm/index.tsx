@@ -29,14 +29,13 @@ export function ContactForm() {
     }
 
     emailjs.send("service_52jzgp7", "template_rkjtmgt", paramsData, "2BV606uxGF_BxmULw")
-      .then((response) => {
-          console.log("EMAIL ENVIADO", response.status);
+      .then(() => {
+        toast.success("Email enviado com sucesso!")
       })
       .catch((error) => {
-        console.log(error)
+        toast.error("Algo de errado aconteceu")
       })
 
-      toast.success("Email enviado com sucesso!")
       reset()
   }
 

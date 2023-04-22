@@ -12,6 +12,7 @@ export function About() {
           width={460}
           height={560}
           alt="Sobre Gabriel Dias"
+          layout="responsive"
         />
 
         <AboutInfos>
@@ -38,10 +39,9 @@ export function About() {
             criação de conteúdo. Participar de todo processo de criação de um
             projeto como esse é fantástico, consegui ganhar mais conhecimento,
             agreguei valor para vida de centenas de milhares de pessoas e todos
-            os dias recebe mensagens de agradecimento pelo conteúdo.
-            Se você desejar conhecer mais sobre minha trajetória e minha vida
-            pessoal, ficarei muito grato em marcar um bate-papo para
-            conversarmos.
+            os dias recebe mensagens de agradecimento pelo conteúdo. Se você
+            desejar conhecer mais sobre minha trajetória e minha vida pessoal,
+            ficarei muito grato em marcar um bate-papo para conversarmos.
           </Paragraph>
         </AboutInfos>
       </AboutContent>

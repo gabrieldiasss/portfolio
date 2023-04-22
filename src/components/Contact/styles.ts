@@ -10,6 +10,12 @@ export const ContactContent = styled("div", {
   margin: "0 auto",
   display: "grid",
   gridTemplateColumns: "1fr 1fr",
+
+  width: "90%",
+  "@laptop": {
+    gap: "2rem",
+    gridTemplateColumns: "1fr",
+  }
 });
 
 export const ContactInfos = styled("div", {
