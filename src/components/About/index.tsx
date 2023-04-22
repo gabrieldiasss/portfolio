@@ -5,14 +5,13 @@ import AboutMeImage from "../../assets/about-image.png";
 
 export function About() {
   return (
-    <AboutContainer>
+    <AboutContainer id="about" >
       <AboutContent>
         <Image
           src={AboutMeImage}
           width={460}
           height={560}
           alt="Sobre Gabriel Dias"
-          layout="responsive"
         />
 
         <AboutInfos>

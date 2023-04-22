@@ -11,7 +11,7 @@ import {
 
 export function Projects() {
   return (
-    <ProjectsContainer>
+    <ProjectsContainer id="projects" >
       <ProjectsContent>
         <HeaderProjects>
           <Title>Meus Projetos</Title>

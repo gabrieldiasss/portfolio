@@ -12,6 +12,9 @@ export const globalStyles = globalCss({
   },
 
   html: {
+    height: "100vh",
+    scrollBehavior: "smooth",
+
     "@laptop": {
       fontSize: "80%",
     },

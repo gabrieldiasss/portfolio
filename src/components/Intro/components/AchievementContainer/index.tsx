@@ -15,7 +15,7 @@ export function AchievementContainer({data}: AchievementContainerProps) {
   return (
     <AchievementContainerStyles>
       <Title>
-      { data.count > 1000 ? "+" : "" } <CountUp start={0} end={data.count} duration={data.duration} delay={0} />
+      { data.count > 1000 ? "+" : "" }<CountUp start={0} end={data.count} duration={data.duration} delay={0} />
       </Title>
       <Paragraph size="s" fonts="poppins">
         {data.description}

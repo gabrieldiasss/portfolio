@@ -8,8 +8,8 @@ interface TimelineProps {
     company: string;
     description: string;
     date: string;
-    icon: string,
-    color: string
+    icon: string;
+    color: string;
   };
 }
 
@@ -26,8 +26,9 @@ export function Timeline({ experience }: TimelineProps) {
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
+        
       }}
-      icon={<Image src={experience.icon} width={35} height={45} alt="" />}
+      icon={<Image src={experience.icon} width={30} height={30} alt="" />}
     >
       <Title color="white" className="vertical-timeline-element-title">
         {experience.role}

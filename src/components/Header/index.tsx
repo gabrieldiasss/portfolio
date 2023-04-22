@@ -35,10 +35,10 @@ export function Header() {
           <Navigation>
             <ul>
               <li>
-                <Link href="">Sobre</Link>
+                <Link href="#about">Sobre</Link>
               </li>
               <li>
-                <Link href="">Trabalhos</Link>
+                <Link href="#projects">Projetos</Link>
               </li>
               |
               <li>
