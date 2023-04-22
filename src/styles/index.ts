@@ -62,6 +62,7 @@ export const {
     mobileXGMax: "(max-width: 600px)",
     mobileXGMin: "(min-width: 600px)",
     mobileG: "(max-width: 500px)",
+    mobileM: "(max-width: 385px)",
     mobileP: "(min-width: 320px)"
   },
 });
