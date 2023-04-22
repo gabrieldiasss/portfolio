@@ -45,6 +45,9 @@ export const {
       "components-button-g": "0.875rem",
       "components-button-s": "0.75rem",
     },
+    shadows: {
+      default: "8px 8px 16px #c9c9c9, -8px -8px 16px #ffffff"
+    },
     fonts: {
       lato: "Lato",
       poppins: "Poppins",

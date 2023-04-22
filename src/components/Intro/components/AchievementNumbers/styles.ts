@@ -5,6 +5,7 @@ export const AchievementNumbersContainer = styled("div", {
     gridTemplateColumns: "1fr 1fr 1fr 1fr",
     backgroundColor: "$base-white",
     padding: "2rem",
+    boxShadow: "$default",
   
     flexWrap: "wrap",
   
@@ -18,8 +19,4 @@ export const AchievementNumbersContainer = styled("div", {
     "@tablet": {
       gridTemplateColumns: "1fr 1fr"
     },
-  
-    /* div: {
-      textAlign: "center",
-    }, */
   });

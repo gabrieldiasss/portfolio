@@ -12,6 +12,8 @@ export default function Document() {
           rel="stylesheet"
         />
         <style id="stitches" dangerouslySetInnerHTML={{ __html: getCssText() }} />
+
+        <link rel="stylesheet" href="path/to/atropos.css" />
       </Head>
       <body>
         <Main />

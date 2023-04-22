@@ -2,17 +2,27 @@ import Image from "next/image";
 import { Paragraph, Title } from "../Typography";
 import { AboutContainer, AboutContent, AboutInfos } from "./styles";
 import AboutMeImage from "../../assets/about-image.png";
+import Atropos from 'atropos/react';
 
 export function About() {
   return (
     <AboutContainer id="about" >
       <AboutContent>
-        <Image
+      <Atropos
+        activeOffset={40}
+        shadowScale={1.0}
+        onEnter={() => console.log('Enter')}
+        onLeave={() => console.log('Leave')}
+        onRotate={(x, y) => console.log('Rotate', x, y)}
+      >
+         <Image
           src={AboutMeImage}
           width={460}
           height={560}
           alt="Sobre Gabriel Dias"
         />
+      </Atropos>
+       
 
         <AboutInfos>
           <Title size="m" weight="medium">

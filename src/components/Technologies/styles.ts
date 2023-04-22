@@ -15,6 +15,7 @@ export const TechnologiesContent = styled("div", {
   margin: "0 auto",
 
   width: "90%",
+
 });
 
 export const TechnologiesCardContainer = styled("div", {

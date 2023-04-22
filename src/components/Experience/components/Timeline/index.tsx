@@ -17,7 +17,7 @@ export function Timeline({ experience }: TimelineProps) {
   return (
     <VerticalTimelineElement
       className="vertical-timeline-element--work"
-      contentStyle={{ background: `${experience.color}`, color: "#A4A4A4" }}
+      contentStyle={{ background: `${experience.color}`, color: "#A4A4A4"}}
       contentArrowStyle={{ borderRight: `7px solid  ${experience.color}` }}
       date={experience.date}
       iconStyle={{

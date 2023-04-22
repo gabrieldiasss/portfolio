@@ -1,7 +1,6 @@
 import { Paragraph, Title } from "../../../Typography";
 import CountUp from "react-countup";
 import { AchievementContainerStyles } from "./styles";
-import { achievements } from "../../../../data/achievement";
 
 interface AchievementContainerProps {
     data: {

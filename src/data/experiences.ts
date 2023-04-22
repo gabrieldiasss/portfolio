@@ -13,7 +13,7 @@ export const experiences = [
   },
 
   {
-    role: "Desemvolvedor Front-End Jr",
+    role: "Desenvolvedor Front-End Jr",
     company: "ParceleCart",
     description:
       "Responsável pelo desenvolvimento de novas funcionalidades com grande grau de importância para o sistema. Além disso, trabalhando em diversas melhorias e efetuando manutenções na plataforma. Compentências: Typescript, ReactJS, NextJS, GIT, Stitches (CSS inJS), Testes unitários, MaterialUI, consumo de API’s GraphQL.",

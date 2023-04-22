@@ -5,6 +5,7 @@ export const ContactFormContainer = styled("form", {
   padding: "2rem",
   borderRadius: 16,
   maxWidth: 500,
+  boxShadow: "$default",
 
   button: {
     width: "100%",
