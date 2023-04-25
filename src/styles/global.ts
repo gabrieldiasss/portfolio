@@ -26,7 +26,7 @@ export const globalStyles = globalCss({
 
     "&::placeholder": {
       color: "$base-label",
-    }
+    },
   },
 
   button: {
@@ -42,10 +42,12 @@ export const globalStyles = globalCss({
 
   a: {
     textDecoration: "none",
-    color: "$base-text",    
+    color: "$base-text",
   },
 
   img: {
-    cursor: "pointer"
-  }
+    cursor: "pointer",
+  },
+
+  
 });

@@ -8,10 +8,11 @@ import { Skills } from "../components/Technologies";
 import { Experience } from "../components/Experience";
 import { Contact } from "../components/Contact";
 import { Footer } from "../components/Footer";
-import { motion } from 'framer-motion';
 
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { useEffect, useState } from "react";
+import { Modal } from "../components/Modal";
 
 interface Projects {
   projects: {
@@ -24,28 +25,42 @@ interface Projects {
 }
 
 export default function Home({ projects }: Projects) {
+  const [modalIsOpen, setIsOpen] = useState(false);
+
+  function closeModal() {
+    setIsOpen(false)
+  }
+
+  useEffect(() => {
+    setIsOpen(true);
+  }, []);
+
+
   return (
     <>
+      <ToastContainer />
+
       <Head>
         <title>👷 Em construção... | Gabriel Dias</title>
       </Head>
 
-      <ToastContainer />
+      <Header />
 
-      <motion.div initial="hidden" animate="show">
-        <Header />
+      <Modal
+        isOpen={modalIsOpen}
+        onClose={closeModal}
+      />
 
-        <main>
-          <Intro />
-          <About />
-          <Skills />
-          <Projects />
-          <Experience />
-          <Contact />
-        </main>
+      <main>
+        <Intro />
+        <About />
+        <Skills />
+        <Projects />
+        <Experience />
+        <Contact />
+      </main>
 
-        <Footer />
-      </motion.div>
+      <Footer />
 
       <BackgroundImage sizeBackground="large" />
     </>

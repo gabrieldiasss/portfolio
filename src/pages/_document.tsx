@@ -30,8 +30,9 @@ export default function Document() {
         <Main />
         <NextScript />
 
-        <script src="bower_components/aos/dist/aos.js"></script>
+        <div id="modals" />
 
+        <script src="bower_components/aos/dist/aos.js"></script>
       </body>
     </Html>
   );
