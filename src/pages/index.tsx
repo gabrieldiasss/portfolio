@@ -1,16 +1,17 @@
-import Head from 'next/head';
-import { Header } from '../components/Header';
-import { Intro } from '../components/Intro';
-import { BackgroundImage } from '../components/BackgroundImage';
-import { About } from '../components/About';
-import { Projects } from '../components/Projects';
-import { Skills } from '../components/Technologies';
-import { Experience } from '../components/Experience';
-import { Contact } from '../components/Contact';
-import { Footer } from '../components/Footer';
+import Head from "next/head";
+import { Header } from "../components/Header";
+import { Intro } from "../components/Intro";
+import { BackgroundImage } from "../components/BackgroundImage";
+import { About } from "../components/About";
+import { Projects } from "../components/Projects";
+import { Skills } from "../components/Technologies";
+import { Experience } from "../components/Experience";
+import { Contact } from "../components/Contact";
+import { Footer } from "../components/Footer";
+import { motion } from 'framer-motion';
 
-import { ToastContainer } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 interface Projects {
   projects: {
@@ -31,18 +32,20 @@ export default function Home({ projects }: Projects) {
 
       <ToastContainer />
 
-      <Header />
+      <motion.div initial="hidden" animate="show">
+        <Header />
 
-      <main>
-        <Intro />
-        <About />
-        <Skills />
-        <Projects />
-        <Experience />
-        <Contact />
-      </main>
+        <main>
+          <Intro />
+          <About />
+          <Skills />
+          <Projects />
+          <Experience />
+          <Contact />
+        </main>
 
-      <Footer />
+        <Footer />
+      </motion.div>
 
       <BackgroundImage sizeBackground="large" />
     </>

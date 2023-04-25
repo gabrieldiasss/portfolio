@@ -13,6 +13,7 @@ export function TechnologiesCard({
   description,
   icon,
 }: TechnologiesCardProps) {
+
   return (
     <TechnologiesCardContainer>
       {icon}

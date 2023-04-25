@@ -6,13 +6,11 @@ import Atropos from 'atropos/react';
 
 export function About() {
   return (
-    <AboutContainer id="about" >
+    <AboutContainer id="about" data-aos="fade-down" >
       <AboutContent>
       <Atropos
         activeOffset={40}
         shadowScale={1.0}
-        onEnter={() => console.log('Enter')}
-        onLeave={() => console.log('Leave')}
         onRotate={(x, y) => console.log('Rotate', x, y)}
       >
          <Image
@@ -22,8 +20,6 @@ export function About() {
           alt="Sobre Gabriel Dias"
         />
       </Atropos>
-       
-
         <AboutInfos>
           <Title size="m" weight="medium">
             Um pouco sobre mim

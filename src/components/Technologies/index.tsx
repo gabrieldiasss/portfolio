@@ -7,6 +7,8 @@ import {
 import { BackgroundImage } from "../BackgroundImage";
 import { TechnologiesCard } from "./components/TechnologiesCard";
 import { Database, FigmaLogo, GithubLogo, Laptop } from "phosphor-react";
+import { motion, useScroll } from "framer-motion";
+import { technologiesAnimation } from "../../animation";
 
 const technologies = [
   {
@@ -36,28 +38,39 @@ const technologies = [
 ];
 
 export function Skills() {
+
   return (
-    <TechnologiesContainer>
-      <TechnologiesContent>
-        <Title>Tecnologias</Title>
-        <Paragraph size="m" fonts="poppins">
-          Experienciei o uso dessas tecnologias no contexto do desenvolvimento
-          web.
-        </Paragraph>
+      <TechnologiesContainer data-aos="fade-up">
+        <TechnologiesContent>
+          <Title>Tecnologias</Title>
+          <Paragraph size="m" fonts="poppins">
+            Experienciei o uso dessas tecnologias no contexto do desenvolvimento
+            web.
+          </Paragraph>
 
-        <TechnologiesCardContainer>
-          {technologies.map((technologie) => (
-            <TechnologiesCard
-              key={technologie.title}
-              title={technologie.title}
-              description={technologie.description}
-              icon={technologie.icon}
-            />
-          ))}
-        </TechnologiesCardContainer>
-      </TechnologiesContent>
+          <TechnologiesCardContainer>
+            {technologies.map((technologie) => (
+              <motion.div
+                variants={technologiesAnimation}
+                
+                transition={{
+                  delay: 0.03,
+                  type: "tween",
+                  duration: 0.8,
+                }}
+              >
+                <TechnologiesCard
+                  key={technologie.title}
+                  title={technologie.title}
+                  description={technologie.description}
+                  icon={technologie.icon}
+                />
+              </motion.div>
+            ))}
+          </TechnologiesCardContainer>
+        </TechnologiesContent>
 
-      <BackgroundImage sizeBackground="small" />
-    </TechnologiesContainer>
+        <BackgroundImage sizeBackground="small" />
+      </TechnologiesContainer>
   );
 }
